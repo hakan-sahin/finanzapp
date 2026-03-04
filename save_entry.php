@@ -7,7 +7,7 @@ error_reporting(E_ALL);
 $sheetId = (int)($_POST['sheet_id'] ?? 0);
 $type    = $_POST['type'] ?? '';
 $title   = trim($_POST['title'] ?? '');
-$amount  = (float)($_POST['amount'] ?? 0);
+$amount  = (double)($_POST['amount'] ?? 0);
 
 /* Typ normalisieren */
 if ($type === 'oneTime') {
